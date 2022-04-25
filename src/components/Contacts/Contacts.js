@@ -31,7 +31,7 @@ function Contacts() {
     const [open, setOpen] = useState(false);
 
     const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState('ironniehofmann@gmail.com');
     const [message, setMessage] = useState('');
 
     const [success, setSuccess] = useState(false);
@@ -136,7 +136,7 @@ function Contacts() {
             if (isEmail(email)) {
                 const responseData = {
                     name: name,
-                    email: email,
+                    email: 'ironniehofmann@gmail.com',
                     message: message,
                 };
 
@@ -170,7 +170,7 @@ function Contacts() {
                 <h1 style={{ color: theme.primary }}>Contacts</h1>
                 <div className='contacts-body'>
                     <div className='contacts-form'>
-                        <form onSubmit={handleContactForm}>
+                        {/* <form onSubmit={handleContactForm}>
                             <div className='input-container'>
                                 <label htmlFor='Name' className={classes.label}>
                                     Name
@@ -247,7 +247,7 @@ function Contacts() {
                                     </div>
                                 </button>
                             </div>
-                        </form>
+                        </form> */}
                         <Snackbar
                             anchorOrigin={{
                                 vertical: 'top',
