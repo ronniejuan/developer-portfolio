@@ -6,6 +6,8 @@
     'Svelte',
     'Photoshop',
     'Lightroom',
+    'Next JS',
+    'Vue',
 
     
 ]
